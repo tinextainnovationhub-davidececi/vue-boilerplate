@@ -1,0 +1,5 @@
+{
+  "extends": "@boilerplate/typescript-config/vue.json",
+  "compilerOptions": { "types": ["vite/client"] },
+  "include": ["src", ".storybook", "vite.config.ts"]
+}

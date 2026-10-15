@@ -1,0 +1,23 @@
+{
+  "common": {
+    "appName": "Boilerplate",
+    "loading": "Caricamento…",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "close": "Chiudi",
+    "search": "Cerca"
+  },
+  "home": {
+    "title": "Benvenuto",
+    "subtitle": "Boilerplate frontend con Vue 3, TypeScript e Tailwind CSS."
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "back": "Torna alla home"
+  },
+  "health": {
+    "ok": "Operativa",
+    "offline": "Non raggiungibile",
+    "label": "API: {status}"
+  }
+}

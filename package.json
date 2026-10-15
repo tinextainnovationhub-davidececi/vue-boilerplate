@@ -1,0 +1,34 @@
+{
+  "name": "frontend-boilerplate",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=12"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @boilerplate/web dev",
+    "build": "pnpm -r --workspace-concurrency=1 build",
+    "preview": "pnpm --filter @boilerplate/web preview",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check-types": "pnpm -r check-types",
+    "test": "pnpm -r test",
+    "storybook": "pnpm --filter @boilerplate/design-system storybook",
+    "build-storybook": "pnpm --filter @boilerplate/design-system build-storybook",
+    "api:generate": "pnpm --filter @boilerplate/api-client generate",
+    "clean": "pnpm -r exec rm -rf dist node_modules/.vite && rm -rf node_modules",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "eslint": "catalog:",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "catalog:",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "typescript": "catalog:"
+  }
+}

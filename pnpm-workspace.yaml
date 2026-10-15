@@ -1,0 +1,55 @@
+packages:
+  - apps/*
+  - packages/*
+
+# Shared versions: packages reference dependencies with "catalog:".
+catalog:
+  vue: ^3.5.44
+  vue-router: ^5.4.0
+  pinia: ^4.1.0
+  vue-i18n: ^11.4.14
+  "@tanstack/vue-query": ^5.104.3
+  "@vueuse/core": ^15.0.0
+  vite: ^8.3.4
+  "@vitejs/plugin-vue": ^6.0.10
+  tailwindcss: ^4.3.3
+  "@tailwindcss/vite": ^4.3.3
+  class-variance-authority: ^0.7.1
+  tailwind-merge: ^3.7.0
+  clsx: ^2.1.1
+  typescript: ~5.9.3
+  vue-tsc: ^3.3.13
+  "@vue/tsconfig": ^0.9.1
+  "@types/node": ^24.0.0
+  vitest: ^5.0.5
+  "@vitest/coverage-v8": ^5.0.5
+  "@vue/test-utils": ^2.5.1
+  jsdom: ^30.1.3
+  storybook: ^10.6.2
+  "@storybook/vue3-vite": ^10.6.2
+  "@storybook/addon-docs": ^10.6.2
+  "@storybook/addon-a11y": ^10.6.2
+  eslint: ^9.39.1
+  "@eslint/js": ^9.39.1
+  typescript-eslint: ^8.71.2
+  eslint-plugin-vue: ^10.11.1
+  eslint-config-prettier: ^10.1.8
+  globals: ^17.13.0
+  prettier: ^3.9.10
+  openapi-typescript: ^7.13.0
+  openapi-fetch: ^0.17.0
+  zod: ^4.0.0
+
+minimumReleaseAgeExclude:
+  - "@vitest/mocker@5.0.5"
+  - "@vitest/spy@5.0.5"
+  - vitest@5.0.5
+  - "@asamuzakjp/dom-selector@10.0.3"
+  - jsdom@30.1.3
+  - "@tanstack/query-core@5.104.3"
+  - "@tanstack/vue-query@5.104.3"
+
+# Allowed build scripts (pnpm blocks the others).
+allowBuilds:
+  esbuild: true
+  vue-demi: false

@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "@boilerplate/design-system/theme.css";
+
+/* Tailwind must also scan the classes used by the design system components. */
+@source "../../../packages/design-system/src";
+
+@layer base {
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+}
